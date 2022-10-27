@@ -28,8 +28,10 @@ return counter;
 }
 std::string find_last_index_str2(std::string str, char f_sym)
 {
+	std::string str1;
 	std::string sym = str.substr(str.rfind(f_sym));
 	return sym;
+	return str1;
 }
 int main()
 {
@@ -54,7 +56,7 @@ int main()
 	
 
 	std::string  str1;
-	str1 = "\n\nHello? world, ñan you  hear me?! No. ";
+	str1 = "\n\nHello? world, Ã±an you  hear me?! No. ";
 	std::cout << str1;
 	std::cout << '\n' << result(str1);
 
